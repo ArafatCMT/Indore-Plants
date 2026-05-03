@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ----------- Favicon ---------- -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- ----------- Swiper's CSS ---------- -->
+    <link rel="stylesheet" href="./src/output.css">
+
+    <!-- ----------- Remix Icon ---------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Indore Plants</title>
+</head>
+
+<body>
+    <!-- ----------- Header ---------- -->
+    <header id="navbars" class="bg-green-950 w-full fixed top-0 left-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center h-16 sm:h-20">
+            <div class="font-Lobster sm:text-2xl">IndorePlants.</div>
+
+            <div id="nav-menu" class="absolute top-0 -left-full min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden">
+                <ul class="flex flex-col items-center gap-8">
+                    <li>
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#popular" class="nav-link">Popular</a>
+                    </li>
+                    <li>
+                        <a href="#review" class="nav-link">Review</a>
+                    </li>
+                </ul>
+
+                <div class="absolute bottom-0 -right-10 opacity-90">
+                    <img src="./assets/images/leaf-1.png" alt="" class="w-32">
+                </div>
+
+                <div class="absolute -top-5 -left-5 rotate-90 opacity-90">
+                    <img src="./assets/images/leaf-2.png" alt="" class="w-32">
+                </div>
+            </div>
+
+            <div class="text-lg sm:text-3xl cursor-pointer z-50">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <!-- ----------- main js ---------- -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

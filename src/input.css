@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&display=swap');
+
+@import "tailwindcss";
+@theme{
+    --breakpoint-sm:340px;
+    --breakpoint-md:540px;
+    --breakpoint-lg:768px;
+    --breakpoint-xl:1180px;
+    --font-Jost:"Jost", sans-serif;
+    --font-Lobster:"Lobster", sans-serif;
+}
+@layer components{
+    .nav-link{
+        @apply text-lg font-bold duration-300 hover:text-yellow-500;
+    }
+}
+body{
+    @apply bg-green-950 text-white font-Jost tracking-wider;
+}
