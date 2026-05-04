@@ -28,7 +28,7 @@ const scrollUp = ()=>{
         scrollUpBtn.classList.add("-bottom-1/2");
         scrollUpBtn.classList.remove("bottom-4");
     }
-}
+};
 
 window.addEventListener("scroll", scrollUp);
 
@@ -42,9 +42,35 @@ const scrollHeader = ()=>{
     else{
         header.classList.remove("border-b", "border-yellow-500");
     }
-}
+};
 
 window.addEventListener("scroll", scrollHeader);
+
+// scroll section active link 
+const activeLink = () =>{
+    const sections = document.querySelectorAll("section");
+    const navlinks = document.querySelectorAll(".nav-link");
+
+    let current = "home";
+
+    sections.forEach(section =>{
+        const sectionTop = section.offsetTop;
+
+        if(this.scrollY >= sectionTop - 60){
+            current = section.getAttribute("id");
+        };
+    });
+
+    navlinks.forEach(link =>{
+        link.classList.remove("active");
+
+        if(link.href.includes(current)){
+            link.classList.add("active");
+        }
+    });
+};
+
+window.addEventListener("scroll" , activeLink);
 
 // Swiper 
 const swiper = new Swiper('.swiper', {
