@@ -11,6 +11,10 @@
     --font-Lobster: "Lobster", sans-serif;
 }
 
+html{
+    @apply overflow-x-hidden scroll-smooth;
+}
+
 @layer components {
     .nav-link {
         @apply text-lg font-bold duration-300 hover:text-yellow-500;
