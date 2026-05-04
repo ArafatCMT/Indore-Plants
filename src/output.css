@@ -473,11 +473,18 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-green-500 {
     border-color: var(--color-green-500);
   }
   .border-green-900 {
     border-color: var(--color-green-900);
+  }
+  .border-yellow-500 {
+    border-color: var(--color-yellow-500);
   }
   .bg-green-700 {
     background-color: var(--color-green-700);
