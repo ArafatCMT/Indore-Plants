@@ -23,7 +23,8 @@
     .btn-outline {
         @apply bg-transparent hover:bg-yellow-500;
     }
-    .title{
+
+    .title {
         @apply font-Lobster text-yellow-500;
     }
 }
@@ -90,4 +91,8 @@ h2 {
 
 h3 {
     @apply text-xl md:text-2xl xl:text-3xl;
+}
+
+.swiper-pagination-bullet {
+    @apply bg-green-500 size-3;
 }
