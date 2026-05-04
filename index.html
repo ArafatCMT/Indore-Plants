@@ -76,7 +76,7 @@
 
                 <div class="flex flex-col items-center gap-5 lg:flex-row">
                     <!-- content  -->
-                    <div class="w-full space-y-5 lg:w-1/2">
+                    <div class="home-data w-full space-y-5 lg:w-1/2">
                         <h1>
                             <span class="text-yellow-500">Plants</span> make a <br> positive
                             <span class="text-yellow-500">impact</span> on <br> your environment
@@ -115,7 +115,7 @@
 
                     <!-- image  -->
                     <div class="w-full relative lg:w-1/2">
-                        <img src="./assets/images/home.png" alt="home_image">
+                        <img src="./assets/images/home.png" alt="home_image" class="home-image">
 
                         <!-- leaf -->
                         <div class="absolute -top-10 right-0 opacity-30 animate-movingY xl:top-5">
@@ -140,7 +140,7 @@
             <div class="container mx-auto w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <!-- card 1  -->
                 <div
-                    class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    class="service-card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
                     <div class="flex items-center gap-5">
                         <i class="ri-truck-line text-3xl md:text-4xl xl:text-5xl"></i>
                         <p class="md:text-lg font-bold">
@@ -156,7 +156,7 @@
 
                 <!-- card 2  -->
                 <div
-                    class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    class="service-card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
                     <div class="flex items-center gap-5">
                         <i class="ri-customer-service-line text-3xl md:text-4xl xl:text-5xl"></i>
                         <p class="md:text-lg font-bold">
@@ -171,7 +171,7 @@
 
                 <!-- card 3  -->
                 <div
-                    class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    class="service-card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
                     <div class="flex items-center gap-5">
                         <i class="ri-plant-line text-3xl md:text-4xl xl:text-5xl"></i>
                         <p class="md:text-lg font-bold">
@@ -186,7 +186,7 @@
 
                 <!-- card 4  -->
                 <div
-                    class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    class="service-card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
                     <div class="flex items-center gap-5">
                         <i class="ri-money-dollar-circle-line text-3xl md:text-4xl xl:text-5xl"></i>
                         <p class="md:text-lg font-bold">
@@ -202,7 +202,7 @@
 
                 <!-- card 5  -->
                 <div
-                    class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    class="service-card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
                     <div class="flex items-center gap-5">
                         <i class="ri-earth-line text-3xl md:text-4xl xl:text-5xl"></i>
                         <p class="md:text-lg font-bold">
@@ -217,7 +217,7 @@
 
                 <!-- card 6  -->
                 <div
-                    class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    class="service-card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
                     <div class="flex items-center gap-5">
                         <i class="ri-user-settings-line text-3xl md:text-4xl xl:text-5xl"></i>
                         <p class="md:text-lg font-bold">
@@ -233,7 +233,7 @@
 
                 <!-- card 7  -->
                 <div
-                    class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    class="service-card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
                     <div class="flex items-center gap-5">
                         <i class="ri-loop-left-line text-3xl md:text-4xl xl:text-5xl"></i>
                         <p class="md:text-lg font-bold">
@@ -248,7 +248,7 @@
 
                 <!-- card 8  -->
                 <div
-                    class="border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
+                    class="service-card border border-green-900 p-5 cursor-pointer rounded-md hover:shadow-2xl hover:-translate-y-1 duration-300 space-y-5">
                     <div class="flex items-center gap-5">
                         <i class="ri-shield-check-line text-3xl md:text-4xl xl:text-5xl"></i>
                         <p class="md:text-lg font-bold">
@@ -266,11 +266,11 @@
 
         <!-- ----------- About Us ---------- -->
         <section id="about" class="relative overflow-hidden">
-            <div class="absolute -top-8 -right-12 opacity-50">
+            <div class="about-leaf absolute -top-8 -right-12 opacity-50">
                 <img src="./assets/images/leaf-3.png" alt="leaf-image" class="w-40 md:w-52 xl:w-64">
             </div>
 
-            <div class="flex flex-col gap-3 items-center text-center mb-10 md:mb-20">
+            <div class="about-top flex flex-col gap-3 items-center text-center mb-10 md:mb-20">
                 <h2 class="title">About Us</h2>
                 <p class="max-w-2xl">Follow instruction for more</p>
             </div>
@@ -279,13 +279,13 @@
                 <!-- item 1  -->
                 <div class="flex flex-col items-center lg:flex-row gap-5">
                     <!-- image  -->
-                    <div class="w-full lg:w-1/2">
+                    <div class="about-item-1-img w-full lg:w-1/2">
                         <img src="./assets/images/plant-1.png" alt="about-image"
                             class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                     </div>
 
                     <!-- content  -->
-                    <div class="w-full lg:w-1/2">
+                    <div class="about-item-1-content w-full lg:w-1/2">
                         <div class="space-y-5">
                             <h3>
                                 Make your <span class="text-yellow-500">organic</span> <br> garden
@@ -303,13 +303,13 @@
                 <!-- item 2  -->
                 <div class="flex flex-col items-center lg:flex-row-reverse gap-5">
                     <!-- image  -->
-                    <div class="w-full lg:w-1/2">
+                    <div class="about-item-2-img w-full lg:w-1/2">
                         <img src="./assets/images/plant-2.png" alt="about-image"
                             class="w-full sm:w-2/3 lg:w-full xl:w-2/3 mx-auto">
                     </div>
 
                     <!-- content  -->
-                    <div class="w-full lg:w-1/2">
+                    <div class="about-item-2-content w-full lg:w-1/2">
                         <div class="space-y-5">
                             <h3>
                                 Comes with us <br> <span class="text-yellow-500">grow up</span> your plant
@@ -328,7 +328,7 @@
 
         <!-- ----------- Popular ---------- -->
         <section id="popular" class="bg-green-900">
-            <div class="flex flex-col gap-3 items-center text-center mb-40 md:mb-28">
+            <div class="popular-top flex flex-col gap-3 items-center text-center mb-40 md:mb-28">
                 <h2 class="title">Your Choice Plant</h2>
                 <p class="max-w-2xl">Follow instruction for more</p>
             </div>
@@ -336,7 +336,7 @@
             <div
                 class="container mx-auto w-full grid grid-cols-1 gap-x-8 gap-y-36 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <!-- card 1  -->
-                <div class="group bg-green-950 p-10 pt-24 rounded-md relative">
+                <div class="popular-card group bg-green-950 p-10 pt-24 rounded-md relative">
                     <img src="./assets/images/cart-1.png" alt="popular-image"
                         class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 group-hover:-top-8">
 
@@ -361,7 +361,7 @@
                 </div>
 
                 <!-- card 2  -->
-                <div class="group bg-green-950 p-10 pt-24 rounded-md relative">
+                <div class="popular-card group bg-green-950 p-10 pt-24 rounded-md relative">
                     <img src="./assets/images/cart-2.png" alt="popular-image"
                         class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 group-hover:-top-8">
 
@@ -386,7 +386,7 @@
                 </div>
 
                 <!-- card 3  -->
-                <div class="group bg-green-950 p-10 pt-24 rounded-md relative">
+                <div class="popular-card group bg-green-950 p-10 pt-24 rounded-md relative">
                     <img src="./assets/images/cart-3.png" alt="popular-image"
                         class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 group-hover:-top-8">
 
@@ -411,7 +411,7 @@
                 </div>
 
                 <!-- card 4  -->
-                <div class="group bg-green-950 p-10 pt-24 rounded-md relative">
+                <div class="popular-card group bg-green-950 p-10 pt-24 rounded-md relative">
                     <img src="./assets/images/cart-4.png" alt="popular-image"
                         class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 group-hover:-top-8">
 
@@ -436,7 +436,7 @@
                 </div>
 
                 <!-- card 5  -->
-                <div class="group bg-green-950 p-10 pt-24 rounded-md relative">
+                <div class="popular-card group bg-green-950 p-10 pt-24 rounded-md relative">
                     <img src="./assets/images/cart-5.png" alt="popular-image"
                         class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 group-hover:-top-8">
 
@@ -461,7 +461,7 @@
                 </div>
 
                 <!-- card 6  -->
-                <div class="group bg-green-950 p-10 pt-24 rounded-md relative">
+                <div class="popular-card group bg-green-950 p-10 pt-24 rounded-md relative">
                     <img src="./assets/images/cart-6.webp" alt="popular-image"
                         class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 group-hover:-top-8">
 
@@ -488,7 +488,7 @@
                 </div>
 
                 <!-- card 7  -->
-                <div class="group bg-green-950 p-10 pt-24 rounded-md relative">
+                <div class="popular-card group bg-green-950 p-10 pt-24 rounded-md relative">
                     <img src="./assets/images/cart-7.png" alt="popular-image"
                         class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 group-hover:-top-8">
 
@@ -513,7 +513,7 @@
                 </div>
 
                 <!-- card 8  -->
-                <div class="group bg-green-950 p-10 pt-24 rounded-md relative">
+                <div class="popular-card group bg-green-950 p-10 pt-24 rounded-md relative">
                     <img src="./assets/images/cart-8.png" alt="popular-image"
                         class="w-56 absolute -top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 group-hover:-top-8">
 
@@ -542,15 +542,15 @@
 
         <!-- ----------- Review ---------- -->
         <section id="review" class="relative mb-20 md:mb-28 overflow-hidden">
-            <div class="absolute -top-8 -left-12 opacity-50">
+            <div class="review-leaf absolute -top-8 -left-12 opacity-50">
                 <img src="./assets/images/leaf-4.png" alt="leaf-image" class="w-40 md:w-52 xl:w-64">
             </div>
-            <div class="flex flex-col gap-3 items-center text-center mb-10 md:mb-20">
+            <div class="review-top flex flex-col gap-3 items-center text-center mb-10 md:mb-20">
                 <h2 class="title">Customer Review</h2>
                 <p class="max-w-2xl">Follow instruction for more</p>
             </div>
 
-            <div class="container mx-auto">
+            <div class="review-swiper container mx-auto">
                 <div class="swiper py-12">
                     <ul class="swiper-wrapper">
 
@@ -672,13 +672,12 @@
             </div>
 
             <!-- social icon  -->
-            <div class="container mx-auto mt-16 mb-10">
+            <div class="footer-icon container mx-auto mt-16 mb-10">
                 <div class="border border-green-500 relative">
                     <div class="absolute top-0 left-0 right-0 transform -translate-y-1/2 max-w-36 mx-auto">
                         <div class="bg-yellow-100 text-lg text-center space-x-2">
                             <i class="ri-facebook-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
-                            <i
-                                class="ri-twitter-x-line hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
+                            <i class="ri-twitter-x-line hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
                             <i class="ri-instagram-line hover:text-yellow-500 duration-300 cursor-pointer"></i>
                             <i class="ri-linkedin-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
                         </div>
@@ -686,7 +685,7 @@
                 </div>
             </div>
             <!-- content  -->
-            <div class="container mx-auto grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start">
+            <div class="footer-content container mx-auto grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start">
                 <!-- item 1  -->
                 <div>
                     <div class="text-7xl text-green-700 text-center inline-block">
@@ -735,12 +734,12 @@
             </div>
 
             <!-- copyright  -->
-            <div class="container mx-auto">
+            <div class="copy-right container mx-auto">
                 <p class="text-center opacity-50 mt-10">Copyright &copy; 2026 Arafat Hossain Emon. All rights reserved.</p>
             </div>
 
             <!-- floral image  -->
-             <div class="absolute bottom-0 left-0 opacity-20 pointer-events-none">
+             <div class="footer-floral absolute bottom-0 left-0 opacity-20 pointer-events-none">
                 <img src="./assets/images/floral-1.png" alt="floral-image" class="w-full lg:w-1/2">
              </div>
         </footer>
@@ -754,6 +753,9 @@
 
     <!-- ----------- Swiper js ---------- -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- ----------- Scroll Reveal ---------- -->
+     <script src="./assets/js/scrollreveal.min.js"></script>
 
     <!-- ----------- main js ---------- -->
     <script src="./main.js"></script>
